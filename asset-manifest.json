@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/BesedinEgor/reactApp/static/css/main.073c9b0a.css",
-    "main.js": "/BesedinEgor/reactApp/static/js/main.86c7a4ba.js",
-    "static/js/787.c4e13848.chunk.js": "/BesedinEgor/reactApp/static/js/787.c4e13848.chunk.js",
-    "static/media/logo.svg": "/BesedinEgor/reactApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/BesedinEgor/reactApp/static/css/main.4e7b38fb.css",
+    "main.js": "/BesedinEgor/reactApp/static/js/main.8782924c.js",
     "index.html": "/BesedinEgor/reactApp/index.html",
-    "main.073c9b0a.css.map": "/BesedinEgor/reactApp/static/css/main.073c9b0a.css.map",
-    "main.86c7a4ba.js.map": "/BesedinEgor/reactApp/static/js/main.86c7a4ba.js.map",
-    "787.c4e13848.chunk.js.map": "/BesedinEgor/reactApp/static/js/787.c4e13848.chunk.js.map"
+    "main.4e7b38fb.css.map": "/BesedinEgor/reactApp/static/css/main.4e7b38fb.css.map",
+    "main.8782924c.js.map": "/BesedinEgor/reactApp/static/js/main.8782924c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.86c7a4ba.js"
+    "static/css/main.4e7b38fb.css",
+    "static/js/main.8782924c.js"
   ]
 }
