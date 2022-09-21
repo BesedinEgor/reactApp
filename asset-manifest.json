@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/BesedinEgor/reactApp/static/css/main.4e7b38fb.css",
-    "main.js": "/BesedinEgor/reactApp/static/js/main.8782924c.js",
-    "index.html": "/BesedinEgor/reactApp/index.html",
-    "main.4e7b38fb.css.map": "/BesedinEgor/reactApp/static/css/main.4e7b38fb.css.map",
-    "main.8782924c.js.map": "/BesedinEgor/reactApp/static/js/main.8782924c.js.map"
+    "main.css": "/reactApp/static/css/main.4e7b38fb.css",
+    "main.js": "/reactApp/static/js/main.8782924c.js",
+    "index.html": "/reactApp/index.html",
+    "main.4e7b38fb.css.map": "/reactApp/static/css/main.4e7b38fb.css.map",
+    "main.8782924c.js.map": "/reactApp/static/js/main.8782924c.js.map"
   },
   "entrypoints": [
     "static/css/main.4e7b38fb.css",
