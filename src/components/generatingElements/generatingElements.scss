@@ -1,0 +1,15 @@
+.elements {
+    display: flex;
+    justify-content: center;
+}
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--darken-color);
+  border-radius: 3px;
+  background-color: var(--red-color);
+}
