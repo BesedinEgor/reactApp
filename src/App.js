@@ -8,54 +8,34 @@ import GeneratingElements from "./components/generatingElements/GeneratingElemen
 
 const OBJECTS = [
   {
-    name: "Egor",
-    id: 1,
-    ratio: 4.1,
+    value: 4.1,
   },
   {
-    name: "Dmitriy",
-    id: 2,
-    ratio: 3.3,
+    value: "Method",
   },
   {
-    name: "Vadim",
-    id: 3,
-    ratio: 4.7,
+    value: 123,
   },
   {
-    name: "Arseniy",
-    id: 4,
-    ratio: 2.5,
+    value: "Component",
   },
   {
-    name: "Pavel",
-    id: 5,
-    ratio: 3.9,
+    value: "Class",
   },
   {
-    name: "Igor",
-    id: 6,
-    ratio: 4.1,
+    value: 2.5,
   },
   {
-    name: "Andrey",
-    id: 7,
-    ratio: 2.3,
+    value: "Operator",
   },
   {
-    name: "Vladislav",
-    id: 8,
-    ratio: 4.3,
+    value: 55,
   },
   {
-    name: "John",
-    id: 9,
-    ratio: 0.3,
+    value: 432,
   },
   {
-    name: "Maksim",
-    id: 10,
-    ratio: 0.3,
+    value: 364,
   }
 ];
 
