@@ -1,13 +1,11 @@
 import React from "react";
 
-export const GeneratingElements = () => {
+export const GeneratingElements = (props) => {
   return (
     <section className="elements">
-      <div className="square">
-        <p className="square__title"></p>
-      </div>
+      {props.obj.map(el => <div className="square" >{el.value}</div>)}
     </section>
-  );
+  )
 };
 
 export default GeneratingElements;
