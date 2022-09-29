@@ -41,7 +41,7 @@ const OBJECTS = [
   },
   {
     color: "#CCCCFF",
-    value: 432,
+    value: -432,
   },
   {
     color: "#77DDE7",
@@ -49,13 +49,14 @@ const OBJECTS = [
   }
 ];
 
+const cloneObjects = JSON.parse(JSON.stringify(OBJECTS));
 
 function App() {
   return (
     <div className="App">
         <TitleItem />
         <GeneratingElements 
-        obj={OBJECTS}
+        cloneObjects={cloneObjects}
         />
     </div>
   );
