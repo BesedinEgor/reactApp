@@ -1,10 +1,9 @@
 import './components/App.scss';
 import './components/vars.scss';
 import './components/generatingElements/generatingElements.scss';
-import './components/titleItem/titleItem.scss';
+import './components/main/Main.scss';
 
-import TitleItem from './components/titleItem/TitleItem';
-import GeneratingElements from './components/generatingElements/GeneratingElements';
+import Main from './components/main/Main';
 
 const OBJECTS = [
   {
@@ -54,10 +53,10 @@ const cloneObjects = JSON.parse(JSON.stringify(OBJECTS));
 function App() {
   return (
     <div className="App">
-      <TitleItem />
-      <GeneratingElements cloneObjects={cloneObjects} />
+      <Main />
     </div>
   );
 }
 
 export default App;
+export { cloneObjects };
