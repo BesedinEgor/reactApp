@@ -11,7 +11,10 @@ const Main = () => {
       </div>
       <section className="elements">{GeneratingElements(cloneObjects)}</section>
       <div className="outputNumber">
-        <GetGeneratedNumber num={5} func={addNum} />
+        <p className="outoutNumber__text">Вывод генерируемого числа:</p>
+        <p className="outputNumber__field">
+          <GetGeneratedNumber num={5} func={addNum} />
+        </p>
       </div>
     </div>
   );
