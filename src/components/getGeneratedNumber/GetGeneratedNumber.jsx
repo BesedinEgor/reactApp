@@ -1,6 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-
 const addNum = (num) => num + 5;
+const getGeneratedNumber = (props) => {
+  const { num, func } = props;
+  return func(num);
+};
 
-export default addNum;
+export default getGeneratedNumber;
+export { addNum };
