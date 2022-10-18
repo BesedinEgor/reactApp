@@ -12,11 +12,12 @@ const State = () => {
       >
         State change
       </button>
-      {!status ? (
-        <div className="stateSquare" style={{ backgroundColor: 'green' }} />
-      ) : (
-        <div className="stateSquare" style={{ backgroundColor: 'red' }} />
-      )}
+      <div
+        className="stateSquare"
+        style={
+          !status ? { backgroundColor: 'red' } : { backgroundColor: 'green' }
+        }
+      />
     </div>
   );
 };
