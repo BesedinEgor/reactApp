@@ -8,6 +8,7 @@ import {
   AddNum4,
   AddNum5,
 } from '../getGeneratedNumber/GetGeneratedNumber';
+import State from '../state/State';
 
 const Main = () => {
   return (
@@ -34,6 +35,7 @@ const Main = () => {
           <GetGeneratedNumber num={5} func={AddNum5} />
         </p>
       </div>
+      <State />
     </div>
   );
 };
