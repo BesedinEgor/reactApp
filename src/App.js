@@ -2,6 +2,7 @@ import './components/App.scss';
 import './components/vars.scss';
 import './components/generatingElements/generatingElements.scss';
 import './components/main/Main.scss';
+import './components/state/state.scss'
 
 import Main from './components/main/Main';
 
