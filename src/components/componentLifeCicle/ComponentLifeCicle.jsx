@@ -1,43 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-class ComponentLifeCicle extends React.Component {
-  constructor(props) {
-    console.clear();
-    console.log('constructor');
-    console.log(props);
-    super();
-    this.state = {
-      s1: 0,
-    };
-  }
+const ComponentLifeCicle = (props) => {
+  console.log('set state');
+  const [s1, setS1] = useState(props.arg);
 
-  buttonHandler = () => {
-    let val = this.state.s1;
+  const buttonHandler = () => {
+    console.log('handler');
+    let val = s1;
     val++;
-    this.setState({ s1: val });
+    setS1(val);
   };
 
-  static getDerivedStateFromProps(props, state) {
-    console.log('get derived state');
-    return { s1: props.arg };
-  }
+  useEffect(() => {
+    console.log('effect');
+  });
 
-  render() {
-    console.log('render 1');
-    return (
-      <>
-        {
-          <div>
-            {console.log('render 2')}
-            <div>
-              <button onClick={this.buttonHandler}>Push</button>
-            </div>
-            <div>{this.state.s1}</div>
-          </div>
-        }
-      </>
-    );
-  }
-}
+  console.log('render 1');
+  return (
+    <>
+      <div>
+        {console.log('render 2')}
+        <div>
+          <button onClick={buttonHandler}>Push</button>
+        </div>
+        <div>{s1}</div>
+      </div>
+    </>
+  );
+};
 
 export default ComponentLifeCicle;
