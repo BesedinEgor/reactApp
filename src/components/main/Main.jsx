@@ -9,7 +9,6 @@ import {
   AddNum5,
 } from '../getGeneratedNumber/GetGeneratedNumber';
 import State from '../state/State';
-import ComponentLifeCicle from '../componentLifeCicle/ComponentLifeCicle';
 
 const Main = () => {
   return (
@@ -37,7 +36,6 @@ const Main = () => {
         </p>
       </div>
       <State />
-      <ComponentLifeCicle arg={77} />
     </div>
   );
 };
