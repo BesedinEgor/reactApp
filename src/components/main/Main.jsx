@@ -1,13 +1,12 @@
 import GeneratingElements from '../generatingElements/GeneratingElements';
-import GetGeneratedNumber from '../getGeneratedNumber/GetGeneratedNumber';
-import { cloneObjects } from '../../App';
-import {
+import GetGeneratedNumber, {
   AddNum1,
   AddNum2,
   AddNum3,
   AddNum4,
   AddNum5,
 } from '../getGeneratedNumber/GetGeneratedNumber';
+import { cloneObjects } from '../../App';
 import State from '../state/State';
 
 const Main = () => {
