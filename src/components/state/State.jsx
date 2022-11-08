@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const State = () => {
   const [status, setStatus] = useState(true);
+  const [arrElem, setArrElem] = useState([]);
+
+  useEffect(() => {
+    setArrElem([...arrElem, 'text']);
+    console.log(arrElem);
+  }, [status]);
+
+  useEffect(() => {
+    console.log('я родился');
+  }, []);
 
   return (
     <div className="current">
