@@ -5,12 +5,9 @@ const State = () => {
   const [arrElem, setArrElem] = useState([]);
 
   useEffect(() => {
-    arrElem.push('text');
-    () => {
-      setArrElem(arrElem);
-    };
+    setArrElem([...arrElem, 'text']);
     console.log(arrElem);
-  });
+  }, [status]);
 
   useEffect(() => {
     console.log('я родился');
