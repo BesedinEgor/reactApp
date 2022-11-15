@@ -8,6 +8,7 @@ import GetGeneratedNumber, {
 } from '../getGeneratedNumber/GetGeneratedNumber';
 import { cloneObjects } from '../../App';
 import State from '../state/State';
+import StatesSquares from '../statesSquares/StatesSquares';
 
 const Main = () => {
   return (
@@ -35,6 +36,7 @@ const Main = () => {
         </p>
       </div>
       <State />
+      <StatesSquares />
     </div>
   );
 };

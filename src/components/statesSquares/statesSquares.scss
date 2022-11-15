@@ -1,0 +1,19 @@
+.containerState {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20px;
+
+  .stateButton {
+    margin-top: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
