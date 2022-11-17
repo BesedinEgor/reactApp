@@ -2,10 +2,10 @@ import './components/App.scss';
 import './components/vars.scss';
 import './components/generatingElements/generatingElements.scss';
 import './components/main/Main.scss';
-import './components/state/state.scss'
-import './components/statesSquares/statesSquares.scss'
+import './components/state/state.scss';
+import './components/statesSquares/statesSquares.scss';
 
-import Main from './components/main/Main';
+import { Main } from './components';
 
 const OBJECTS = [
   {

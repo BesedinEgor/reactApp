@@ -1,14 +1,15 @@
-import GeneratingElements from '../generatingElements/GeneratingElements';
-import GetGeneratedNumber, {
+import { GeneratingElements } from '../';
+import {
+  GetGeneratedNumber,
   AddNum1,
   AddNum2,
   AddNum3,
   AddNum4,
   AddNum5,
-} from '../getGeneratedNumber/GetGeneratedNumber';
+} from '../';
 import { cloneObjects } from '../../App';
-import State from '../state/State';
-import StatesSquares from '../statesSquares/StatesSquares';
+import { State } from '../';
+import { StatesSquares } from '../';
 
 const Main = () => {
   return (
@@ -41,4 +42,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export { Main };

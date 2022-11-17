@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import SquareColor from './SquareColor';
+import { SquareColor } from './SquareColor';
 
 const StatesSquares = () => {
   const [state, setState] = useState('black');
@@ -12,4 +12,4 @@ const StatesSquares = () => {
   );
 };
 
-export default StatesSquares;
+export { StatesSquares };

@@ -32,4 +32,4 @@ const State = () => {
   );
 };
 
-export default State;
+export { State };
