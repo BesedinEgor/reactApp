@@ -5,9 +5,9 @@ const StatesSquares = () => {
   const [state, setState] = useState('black');
   return (
     <div className="containerState">
-      <SquareColor color={state} setState={setState} recomended={'yellow'} />
-      <SquareColor />
-      <SquareColor />
+      <SquareColor color={state} setState={setState} default={'yellow'} />
+      <SquareColor color={state} setState={setState} default={'red'} />
+      <SquareColor color={state} setState={setState} default={'green'} />
     </div>
   );
 };
