@@ -21,11 +21,8 @@ const SquareColor = (props) => {
         type="button"
         className="stateButton"
         style={{ backgroundColor: props.default }}
-        onClick={() => {
-          <div
-            className="square"
-            style={{ backgroundColor: props.setState(props.default) }}
-          />;
+        onClick={(el) => {
+          el.style = { backgroundColor: props.setState(props.default) };
         }}
       >
         States color
