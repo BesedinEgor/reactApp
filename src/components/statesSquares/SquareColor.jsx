@@ -1,18 +1,18 @@
 import { React } from 'react';
 import PropTypes from 'prop-types';
 
-const SquareColor = (props) => {
+const SquareColor = ({ color, setState, folt }) => {
   SquareColor.propTypes = {
     color: PropTypes.string.isRequired,
     setState: PropTypes.func.isRequired,
-    default: PropTypes.string.isRequired,
+    folt: PropTypes.string.isRequired,
   };
   return (
     <div className="container">
       <div
         className="square"
         style={{
-          backgroundColor: props.color,
+          backgroundColor: color,
         }}
       >
         Object
@@ -20,9 +20,9 @@ const SquareColor = (props) => {
       <button
         type="button"
         className="stateButton"
-        style={{ backgroundColor: props.default }}
-        onClick={(el) => {
-          el.style = { backgroundColor: props.setState(props.default) };
+        style={{ backgroundColor: folt }}
+        onClick={() => {
+          setState(folt);
         }}
       >
         States color
