@@ -9,5 +9,4 @@ const GetGeneratedNumber = (props) => {
   return func(num);
 };
 
-export { AddNum1, AddNum2, AddNum3, AddNum4, AddNum5 };
-export default GetGeneratedNumber;
+export { GetGeneratedNumber, AddNum1, AddNum2, AddNum3, AddNum4, AddNum5 };

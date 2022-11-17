@@ -36,4 +36,4 @@ const GeneratingElements = (props) => {
     });
 };
 
-export default GeneratingElements;
+export { GeneratingElements };

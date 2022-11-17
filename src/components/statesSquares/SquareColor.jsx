@@ -31,4 +31,4 @@ const SquareColor = ({ color, setState, folt }) => {
   );
 };
 
-export default SquareColor;
+export { SquareColor };
