@@ -1,15 +1,18 @@
-import { GeneratingElements } from '../';
 import {
+  GeneratingElements,
   GetGeneratedNumber,
   AddNum1,
   AddNum2,
   AddNum3,
   AddNum4,
   AddNum5,
+  State,
+  StatesSquares,
+  Parent,
+  // ChildrenOne,
+  ChildrenTwo,
 } from '../';
 import { cloneObjects } from '../../App';
-import { State } from '../';
-import { StatesSquares } from '../';
 
 const Main = () => {
   return (
@@ -38,6 +41,13 @@ const Main = () => {
       </div>
       <State />
       <StatesSquares />
+
+      <Parent>
+        <div className="square" style={{ backgroundColor: 'lightblue' }}>
+          Children
+        </div>
+        <ChildrenTwo />
+      </Parent>
     </div>
   );
 };
