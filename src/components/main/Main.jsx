@@ -9,6 +9,7 @@ import {
   State,
   StatesSquares,
   Parent,
+  ChildrenOne,
   ChildrenTwo,
 } from '../';
 import { cloneObjects } from '../../App';
@@ -42,12 +43,8 @@ const Main = () => {
       <StatesSquares />
 
       <Parent>
-        <div className="container">
-          <div className="square" style={{ backgroundColor: 'lightblue' }}>
-            Children
-          </div>
-          <ChildrenTwo />
-        </div>
+        <ChildrenOne />
+        <ChildrenTwo />
       </Parent>
     </div>
   );
