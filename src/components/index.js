@@ -1,3 +1,8 @@
+import { Header } from './header/Header.jsx';
+import { Home } from './home/Home.jsx';
+import { Info } from './info/Info.jsx';
+import { Error } from './error/Error.jsx';
+
 import { GeneratingElements } from './generatingElements/GeneratingElements.jsx';
 import {
   GetGeneratedNumber,
@@ -15,6 +20,10 @@ import { ChildrenOne } from './parent/ChildrenOne.jsx';
 import { ChildrenTwo } from './parent/ChildrenTwo.jsx';
 
 export {
+  Header,
+  Home,
+  Info,
+  Error,
   GeneratingElements,
   GetGeneratedNumber,
   AddNum1,

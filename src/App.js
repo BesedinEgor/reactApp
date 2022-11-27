@@ -1,3 +1,8 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Header, Home, Info, Error } from './components';
+import './components/header/header.scss';
 import './components/App.scss';
 import './components/vars.scss';
 import './components/generatingElements/generatingElements.scss';
@@ -5,7 +10,7 @@ import './components/main/Main.scss';
 import './components/state/state.scss';
 import './components/statesSquares/statesSquares.scss';
 
-import { Main } from './components';
+// import { Main } from './components';
 
 const OBJECTS = [
   {
@@ -55,7 +60,15 @@ const cloneObjects = JSON.parse(JSON.stringify(OBJECTS));
 function App() {
   return (
     <div className="App">
-      <Main />
+      {/* <Main /> */}
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
+          <Route exact path="*" element={<Error />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
