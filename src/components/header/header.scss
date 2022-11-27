@@ -1,0 +1,28 @@
+.menu {
+  background-color: #6de871;
+  width: 100vw;
+}
+
+.menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.menu__item {
+  padding: 20px 0;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--dark-color);
+
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 0.6);
+      transition: color 0.2s ease;
+    }
+  }
+}
