@@ -7,7 +7,7 @@ const Info = () => {
       <h1 className="title" style={{ textAlign: 'center' }}>
         Information page
       </h1>
-      <div className="back"><Link to={'/'}>Back</Link></div>
+      <Link className='back' to={'/'}>Back</Link>
     </>
   );
 };

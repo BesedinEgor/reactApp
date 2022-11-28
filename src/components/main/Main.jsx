@@ -21,9 +21,7 @@ const Main = () => {
       <div className="titleItem">
         <h1>шо по реакту?!</h1>
       </div>
-      <div className="back">
-        <Link to={'/'}>Back</Link>
-      </div>
+      <Link className='back' to={'/'}>Back</Link>
       <section className="elements">{GeneratingElements(cloneObjects)}</section>
       <div className="outputNumber">
         <p className="outputNumber__text">Вывод генерируемых чисел:</p>
