@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Header, Home, Info, Error } from './components';
+import { Header, Home, Info, OldTasks, Main, Error } from './components';
 import './components/header/header.scss';
 import './components/App.scss';
 import './components/vars.scss';
@@ -9,8 +9,7 @@ import './components/generatingElements/generatingElements.scss';
 import './components/main/Main.scss';
 import './components/state/state.scss';
 import './components/statesSquares/statesSquares.scss';
-
-// import { Main } from './components';
+import './components/home/home.scss';
 
 const OBJECTS = [
   {
@@ -60,14 +59,23 @@ const cloneObjects = JSON.parse(JSON.stringify(OBJECTS));
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
       <Router>
         <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/info" element={<Info />} />
-          <Route exact path="*" element={<Error />} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/info" element={<Info />} />
+            <Route
+              path="/training-tasks"
+              element={
+                <OldTasks>
+                  <Main />
+                </OldTasks>
+              }
+            />
+            <Route exact path="*" element={<Error />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );

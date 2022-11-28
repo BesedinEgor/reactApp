@@ -6,8 +6,8 @@
 }
 
 .stateSquare {
-  width: 100px;
-  height: 100px;
+  width: calc(var(--index) * 5);
+  height: calc(var(--index) * 5);
   border: 2px solid var(--dark-color);
   border-radius: 5px;
 }

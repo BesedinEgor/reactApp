@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   GeneratingElements,
   GetGeneratedNumber,
@@ -19,6 +20,9 @@ const Main = () => {
     <div className="wrapper">
       <div className="titleItem">
         <h1>шо по реакту?!</h1>
+      </div>
+      <div className="back">
+        <Link to={'/'}>Back</Link>
       </div>
       <section className="elements">{GeneratingElements(cloneObjects)}</section>
       <div className="outputNumber">

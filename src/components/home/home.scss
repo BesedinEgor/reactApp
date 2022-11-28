@@ -1,0 +1,13 @@
+.routs__item {
+  list-style: none;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--darken-color);
+  }
+}

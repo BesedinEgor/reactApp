@@ -5,8 +5,15 @@
 }
 
 body {
-  font-size: calc(var(--index) * 1.2);
+  font-size: calc(var(--index) * 0.8);
   font-family: var(--font-family);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(var(--index) * 45);
+  margin: 0 auto;
 }
 
 // #root {

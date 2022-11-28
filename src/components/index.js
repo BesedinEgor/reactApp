@@ -18,6 +18,7 @@ import { StatesSquares } from './statesSquares/StatesSquares.jsx';
 import { Parent } from './parent/Parent.jsx';
 import { ChildrenOne } from './parent/ChildrenOne.jsx';
 import { ChildrenTwo } from './parent/ChildrenTwo.jsx';
+import { OldTasks } from './oldTasks/OldTasks.jsx';
 
 export {
   Header,
@@ -37,4 +38,5 @@ export {
   Parent,
   ChildrenOne,
   ChildrenTwo,
+  OldTasks,
 };

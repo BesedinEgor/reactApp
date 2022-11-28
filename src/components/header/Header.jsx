@@ -7,6 +7,7 @@ const Header = () => {
       <ul className="menu__items">
         <li className="menu__item"><Link to='/'>Home</Link></li>
         <li className="menu__item"><Link to='/info'>Info</Link></li>
+        <li className="menu__item"><Link to='/training-tasks'>TrainingTasks</Link></li>
       </ul>
     </nav>
   );
