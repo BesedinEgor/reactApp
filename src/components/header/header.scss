@@ -7,22 +7,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 .menu__item {
   padding: 20px 0;
   list-style: none;
   cursor: pointer;
-  transition: color 0.2s ease;
 
   a {
+    padding: 18px 0;
     list-style: none;
     text-decoration: none;
     color: var(--dark-color);
+    transition: color 0.2s ease;
+
+    &.active {
+      border-bottom: 2px solid var(--dark-color);
+    }
 
     &:hover {
       color: rgba($color: #ffffff, $alpha: 0.6);
       transition: color 0.2s ease;
     }
+  }
+
+  &:last-child {
+    border-left: 2px solid var(--dark-color);
+    padding-left: 10px;
   }
 }
