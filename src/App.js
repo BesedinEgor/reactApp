@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 import { Header, Home, Info, OldTasks, Main, Posts, Error } from './components';
 import './components/header/header.scss';
 import './components/App.scss';
