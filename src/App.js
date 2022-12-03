@@ -13,8 +13,6 @@ import './components/state/state.scss';
 import './components/statesSquares/statesSquares.scss';
 import './components/home/home.scss';
 import './components/posts/posts.scss';
-import './components/home/home.scss';
-import './components/posts/posts.scss';
 
 const OBJECTS = [
   {
@@ -64,26 +62,6 @@ const cloneObjects = JSON.parse(JSON.stringify(OBJECTS));
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header />
-        <br />
-        <div className="container">
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/info" element={<Info />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route
-              path="/training-tasks"
-              element={
-                <OldTasks>
-                  <Main />
-                </OldTasks>
-              }
-            />
-            <Route exact path="*" element={<Error />} />
-          </Routes>
-        </div>
-      </Router>
       <Router>
         <Header />
         <br />
