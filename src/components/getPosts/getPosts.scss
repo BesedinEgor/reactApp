@@ -1,0 +1,26 @@
+.getposts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.getposts__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.getposts__input {
+  width: calc(var(--index) * 10);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.getposts__button {
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  background-color: #6de871;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

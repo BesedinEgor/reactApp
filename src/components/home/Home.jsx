@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="routs">
-      <h1 className="routs__title" style={{ textAlign: 'center', textTransform: 'uppercase' }}>
+      <h1
+        className="routs__title"
+        style={{ textAlign: 'center', textTransform: 'uppercase' }}
+      >
         Home page
       </h1>
       <nav className="routs__menu">
@@ -17,6 +20,9 @@ const Home = () => {
           </li>
           <li className="routs__item">
             <Link to={'/posts'}>Posts</Link>
+          </li>
+          <li className="routs__item">
+            <Link to={'/getposts'}>Get Posts</Link>
           </li>
           <li className="routs__item">
             <Link to={'/training-tasks'}>TrainingTasks</Link>
