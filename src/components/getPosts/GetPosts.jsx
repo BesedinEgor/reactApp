@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom';
 
 const GetPosts = () => {
   const [output, setOutput] = useState(''); //стэйт для инпута
-  const [value, setValue] = useState([]);
+  const [data, setData] = useState(false);
 
-  function getInputValue() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((response) => response.json())
-      .then((posts) => setValue(posts));
+  function getInputValue(id) {
+    if (id) {
+      fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error('server error');
+        })
+        .then((data) => setData(data))
+        .catch((error) => console.log(error));
+    }
   }
-
   return (
     <>
       <h1
@@ -26,10 +33,10 @@ const GetPosts = () => {
       <div className="getposts">
         <form className="current">
           <label className="getposts__label">
+            Введите номер поста для его вывода:
             <input
               className="getposts__input"
               type="number"
-              placeholder="enter a number from 1 to 100"
               onChange={(event) => {
                 setOutput(event.target.value);
               }}
@@ -38,22 +45,22 @@ const GetPosts = () => {
             <button
               className="getposts__button"
               type="submit"
-              onClick={getInputValue}
+              onClick={() => getInputValue(output)}
               disabled={output <= 0 || output > 100 || output.length === 0}
             >
               show post
             </button>
           </label>
         </form>
-      </div>
-
-      {value.map((elem) => {
-        return (
-          <div className="posts__item" key={elem.id}>
-            {elem.id}
+        {data ? (
+          <div className="getposts__item" key={data.id}>
+            <h3 className="getposts__item-id">{data.id}</h3>
+            <p className="getposts__item-title">{data.title}</p>
+            <br />
+            <p className="getposts__items-content">{data.body}</p>
           </div>
-        );
-      })}
+        ) : null}
+      </div>
     </>
   );
 };
