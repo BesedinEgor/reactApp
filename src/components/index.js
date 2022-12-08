@@ -2,6 +2,7 @@ import { Header } from './header/Header.jsx';
 import { Home } from './home/Home.jsx';
 import { Info } from './info/Info.jsx';
 import { Error } from './error/Error.jsx';
+import { GetPosts } from './getPosts/GetPosts.jsx';
 
 import { GeneratingElements } from './generatingElements/GeneratingElements.jsx';
 import {
@@ -40,5 +41,6 @@ export {
   ChildrenOne,
   ChildrenTwo,
   Posts,
+  GetPosts,
   OldTasks,
 };

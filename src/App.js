@@ -1,8 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Header, Home, Info, OldTasks, Main, Posts, Error } from './components';
-import './components/header/header.scss';
+import { Header, Home, Info, OldTasks, Main, Posts, Error, GetPosts } from './components';
 import './components/header/header.scss';
 import './components/App.scss';
 import './components/vars.scss';
@@ -12,6 +11,7 @@ import './components/state/state.scss';
 import './components/statesSquares/statesSquares.scss';
 import './components/home/home.scss';
 import './components/posts/posts.scss';
+import './components/getPosts/getPosts.scss';
 
 const OBJECTS = [
   {
@@ -69,6 +69,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/info" element={<Info />} />
             <Route path="/posts" element={<Posts />} />
+            <Route path="/getposts" element={<GetPosts />} />
             <Route
               path="/training-tasks"
               element={
