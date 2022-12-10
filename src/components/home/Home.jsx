@@ -25,6 +25,9 @@ const Home = () => {
             <Link to={'/getposts'}>Get Posts</Link>
           </li>
           <li className="routs__item">
+            <Link to="/todolist">Todo list</Link>
+          </li>
+          <li className="routs__item">
             <Link to={'/training-tasks'}>TrainingTasks</Link>
           </li>
         </ul>

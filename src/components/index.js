@@ -20,6 +20,7 @@ import { Parent } from './parent/Parent.jsx';
 import { ChildrenOne } from './parent/ChildrenOne.jsx';
 import { ChildrenTwo } from './parent/ChildrenTwo.jsx';
 import { Posts } from './posts/Posts.jsx';
+import { TodoList } from './todoList/TodoList.jsx';
 import { OldTasks } from './oldTasks/OldTasks.jsx';
 
 export {
@@ -42,5 +43,6 @@ export {
   ChildrenTwo,
   Posts,
   GetPosts,
+  TodoList,
   OldTasks,
 };

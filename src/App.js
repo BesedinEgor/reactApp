@@ -1,7 +1,17 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Header, Home, Info, OldTasks, Main, Posts, Error, GetPosts } from './components';
+import {
+  Header,
+  Home,
+  Info,
+  OldTasks,
+  Main,
+  Posts,
+  Error,
+  GetPosts,
+  TodoList,
+} from './components';
 import './components/header/header.scss';
 import './components/App.scss';
 import './components/vars.scss';
@@ -70,6 +80,7 @@ function App() {
             <Route path="/info" element={<Info />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/getposts" element={<GetPosts />} />
+            <Route path="/todolist" element={<TodoList />} />
             <Route
               path="/training-tasks"
               element={
