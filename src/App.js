@@ -11,6 +11,7 @@ import {
   Error,
   GetPosts,
   TodoList,
+  Items,
 } from './components';
 import './components/header/header.scss';
 import './components/App.scss';
@@ -22,6 +23,7 @@ import './components/statesSquares/statesSquares.scss';
 import './components/home/home.scss';
 import './components/posts/posts.scss';
 import './components/getPosts/getPosts.scss';
+import './components/todoList/todoList.scss';
 
 const OBJECTS = [
   {
@@ -80,7 +82,7 @@ function App() {
             <Route path="/info" element={<Info />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/getposts" element={<GetPosts />} />
-            <Route path="/todolist" element={<TodoList />} />
+            <Route path="/todolist" element={<TodoList items={Items} />} />
             <Route
               path="/training-tasks"
               element={
