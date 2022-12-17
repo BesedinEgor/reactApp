@@ -21,6 +21,7 @@ const TodoList = ({ items }) => {
       <div className="todo">
         <form className="todo__form">
           <TextInput
+            className="todo__input"
             placeholder="Tasks"
             description="Поле для ввода текста"
             radius="md"

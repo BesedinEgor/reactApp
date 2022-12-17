@@ -1,7 +1,6 @@
 .todo {
   display: flex;
   flex-direction: column;
-  width: calc(var(--index) * 15);
   margin: 0 auto;
   gap: 20px;
 
@@ -10,10 +9,11 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 30px;
+  }
 
-    &__input {
-      padding: 0 10px;
-    }
+  &__input {
+    width: 250px;
   }
 
   .todoList {
