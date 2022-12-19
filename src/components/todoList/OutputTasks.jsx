@@ -6,7 +6,6 @@ const OutputTasks = ({ items }) => {
   OutputTasks.propTypes = {
     items: PropTypes.array.isRequired,
   };
-  console.log(items);
   return (
     <MantineProvider>
       {items.map((listItem) => {

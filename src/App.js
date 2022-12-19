@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
+//jsx components
 import {
   Header,
   Home,
@@ -11,8 +12,12 @@ import {
   Error,
   GetPosts,
   TodoList,
-  todoItems,
 } from './components';
+
+//constants
+import { todoItems } from './js';
+
+//component styles
 import './components/header/header.scss';
 import './components/App.scss';
 import './components/vars.scss';

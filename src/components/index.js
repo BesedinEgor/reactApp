@@ -20,10 +20,7 @@ import { Parent } from './parent/Parent.jsx';
 import { ChildrenOne } from './parent/ChildrenOne.jsx';
 import { ChildrenTwo } from './parent/ChildrenTwo.jsx';
 import { Posts } from './posts/Posts.jsx';
-
 import { TodoList } from './todoList/TodoList.jsx';
-import { todoItems } from '../consts/todoItems.js';
-
 import { OldTasks } from './oldTasks/OldTasks.jsx';
 
 export {
@@ -47,6 +44,5 @@ export {
   Posts,
   GetPosts,
   TodoList,
-  todoItems,
   OldTasks,
 };
