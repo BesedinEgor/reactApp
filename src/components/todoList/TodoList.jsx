@@ -1,11 +1,12 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import { MantineProvider, Button, TextInput, Checkbox } from '@mantine/core';
+import { MantineProvider, Button, TextInput } from '@mantine/core';
+import { OutputTasks } from './OutputTasks';
 
 const TodoList = ({ items }) => {
   TodoList.propTypes = {
-    items: PropTypes.object.isRequired,
+    items: PropTypes.array.isRequired,
   };
   return (
     <MantineProvider>
@@ -36,15 +37,7 @@ const TodoList = ({ items }) => {
           </Button>
         </form>
         <div className="todoList">
-          {items.map((listItem) => {
-            return (
-              <Checkbox
-                className="todoList__checkbox"
-                label={listItem.title}
-                key={items.id}
-              />
-            );
-          })}
+          <OutputTasks items={items} />
         </div>
       </div>
     </MantineProvider>
