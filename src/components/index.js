@@ -22,7 +22,7 @@ import { ChildrenTwo } from './parent/ChildrenTwo.jsx';
 import { Posts } from './posts/Posts.jsx';
 
 import { TodoList } from './todoList/TodoList.jsx';
-import { Items } from './todoList/TodoItems.js';
+import { items } from '../todoItems.js';
 
 import { OldTasks } from './oldTasks/OldTasks.jsx';
 
@@ -47,6 +47,6 @@ export {
   Posts,
   GetPosts,
   TodoList,
-  Items,
+  items,
   OldTasks,
 };

@@ -11,7 +11,7 @@ import {
   Error,
   GetPosts,
   TodoList,
-  Items,
+  items,
 } from './components';
 import './components/header/header.scss';
 import './components/App.scss';
@@ -82,7 +82,7 @@ function App() {
             <Route path="/info" element={<Info />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/getposts" element={<GetPosts />} />
-            <Route path="/todolist" element={<TodoList items={Items} />} />
+            <Route path="/todolist" element={<TodoList items={items} />} />
             <Route
               path="/training-tasks"
               element={
