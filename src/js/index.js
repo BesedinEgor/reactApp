@@ -1,3 +1,3 @@
 import { todoItems } from './todoItems';
-
-export { todoItems };
+import { randomId } from './randomId';
+export { todoItems, randomId };

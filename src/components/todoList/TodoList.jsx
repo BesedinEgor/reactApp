@@ -1,19 +1,24 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import { MantineProvider, Button, TextInput } from '@mantine/core';
-import { OutputTasks } from './OutputTasks';
+import { MantineProvider, Button, TextInput, Checkbox } from '@mantine/core';
+// import { OutputTasks} from './OutputTasks';
+import { randomId } from '../../js';
 
 const TodoList = ({ items }) => {
-  const [output, setOutput] = useState('hi');
+  const [output, setOutput] = useState({});
+  const [copyItems, setCopyItems] = useState(items);
 
   TodoList.propTypes = {
     items: PropTypes.array.isRequired,
   };
 
   const btnHundler = (e) => {
+    setCopyItems([...copyItems, output]);
     e.preventDefault();
     console.log(output);
+    console.log(items);
+    console.log(copyItems);
   };
   return (
     <MantineProvider>
@@ -33,10 +38,10 @@ const TodoList = ({ items }) => {
             placeholder="Tasks"
             description="Поле для ввода текста"
             radius="md"
+            value={output.title}
             onChange={(event) => {
-              setOutput(event.currentTarget.value);
+              setOutput({id: randomId(), title: event.target.value});
             }}
-            defaultValue={output}
           />
           <Button
             className="todo__button"
@@ -49,7 +54,16 @@ const TodoList = ({ items }) => {
           </Button>
         </form>
         <div className="todoList">
-          <OutputTasks items={items} />
+          {items.map((listItem) => {
+            return (
+              <div key={listItem.id}>
+                <Checkbox
+                  className="todoList__checkbox"
+                  label={listItem.title}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </MantineProvider>
